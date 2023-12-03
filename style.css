@@ -3,33 +3,48 @@
   padding: 0;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
+a {
+  text-decoration: none;
+  color: rgb(48, 22, 48);
+}
 body {
   background-color: rgb(60, 60, 60);
   display: flex;
-  justify-content: center;
 }
 .pageContainer {
   background-color: rgb(240, 240, 240);
   height: 100vh;
-  margin-left: 350px;
-  margin-right: 350px;
+  margin-left: 20vw;
+  margin-right: 20vw;
   display: flex;
   flex-direction: row;
 }
-.logoText {
-  position: absolute;
-  padding: 31px;
-  padding-left: 0px;
-  left: 510px;
-  bottom: 170px;
-  color: white;
+.leftSection {
+  position: relative;
+  width: 20vw;
+  height: 100vh;
+}
+.logoAndText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 15%;
+  height: 150px;
+  width: 20vw;
   background-color: rgba(34, 34, 34, 0.65);
+  overflow: hidden;
+}
+.logoText {
+  color: white;
   font-size: 65px;
   font-family: monospace;
 }
 .rightSection {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 40vw;
 }
 .topRight {
   padding-top: 80px;
@@ -43,9 +58,7 @@ body {
 }
 .middleRight {
   background-color: white;
-  padding-left: 50px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px 50px;
 }
 .formContainer {
   display: flex;
@@ -84,19 +97,14 @@ button {
   font-weight: bold;
 }
 .loginDiv {
-  padding-top: 20px;
+  padding: 20px 0px;
 }
 #backImage {
-  position: relative;
-  max-height: 100vh;
-  padding: 0;
-  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 #frontLogo {
-  position: absolute;
-  width: 160px;
-  height: 140px;
-  opacity: 65%;
-  bottom: 170px;
-  left: 350px;
+  height: 100%;
+  width: 40%;
+  opacity: 70%;
 }
