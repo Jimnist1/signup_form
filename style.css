@@ -8,7 +8,7 @@ body {
   justify-content: center;
 }
 .pageContainer {
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(240, 240, 240);
   height: 100vh;
   margin-left: 350px;
   margin-right: 350px;
@@ -18,11 +18,30 @@ body {
 .rightSection {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+}
+.topRight {
   padding-left: 50px;
+  padding-bottom: 75px;
+  padding-right: 200px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pageDescription {
+  padding-bottom: 25px;
+}
+.middleRight {
+  background-color: white;
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .formContainer {
   display: flex;
+}
+.bottomRight {
+  padding-left: 50px;
+  padding-top: 30px;
 }
 #backImage {
   position: absolute;
