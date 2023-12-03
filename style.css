@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+#backImage {
+  max-height: 100vh;
+}
+#frontLogo {
+  height: 200px;
+}
