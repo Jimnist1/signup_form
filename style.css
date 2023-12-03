@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 body {
   background-color: rgb(60, 60, 60);
@@ -18,8 +19,8 @@ body {
 .logoText {
   position: absolute;
   padding: 31px;
-  padding-left: 20px;
-  left: 490px;
+  padding-left: 0px;
+  left: 510px;
   bottom: 170px;
   color: white;
   background-color: rgba(34, 34, 34, 0.65);
@@ -36,7 +37,6 @@ body {
   padding-bottom: 75px;
   padding-right: 200px;
   font-size: 20px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .pageDescription {
   padding-bottom: 25px;
@@ -54,16 +54,35 @@ body {
   font-size: 20px;
   padding-bottom: 20px;
 }
+.formLeft {
+  padding-right: 50px;
+}
+.inputDiv {
+  padding-bottom: 20px;
+}
+input {
+  border-radius: 5px;
+  height: 20px;
+}
 input,
 label {
   display: block;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font: 20px;
 }
 .bottomRight {
   padding-left: 50px;
   padding-top: 30px;
   box-shadow: 0px 5px 5px darkgrey inset;
+}
+button {
+  padding: 10px 40px;
+  background-color: rgb(48, 22, 48);
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.loginDiv {
+  padding-top: 20px;
 }
 #backImage {
   position: relative;
@@ -73,7 +92,7 @@ label {
 }
 #frontLogo {
   position: absolute;
-  width: 140px;
+  width: 160px;
   height: 140px;
   opacity: 65%;
   bottom: 170px;

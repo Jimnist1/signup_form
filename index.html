@@ -36,11 +36,11 @@
           <form action="example.com/path" method="post">
             <div class="formContainer">
               <div class="formLeft">
-                <div>
+                <div class="inputDiv">
                   <label for="first_name">FIRST NAME:</label
                   ><input type="text" name="first_name" id="first_name" />
                 </div>
-                <div>
+                <div class="inputDiv">
                   <label for="email_address">EMAIL:</label
                   ><input
                     type="email"
@@ -48,20 +48,21 @@
                     id="email_address"
                   />
                 </div>
-                <div>
+                <div class="inputDiv">
                   <label for="password">PASSWORD:</label
                   ><input type="password" name="password" id="password" />
                 </div>
               </div>
               <div class="formRight">
-                <div>
+                <div class="inputDiv">
                   <label for="last_name">LAST NAME:</label
                   ><input type="text" name="last_name" id="last_name" />
                 </div>
-                <div></div>
-                <label for="phone_number">PHONE NUMBER:</label
-                ><input type="tel" name="phone_number" id="phone_number" />
-                <div>
+                <div class="inputDiv">
+                  <label for="phone_number">PHONE NUMBER:</label
+                  ><input type="tel" name="phone_number" id="phone_number" />
+                </div>
+                <div class="inputDiv">
                   <label for="passwordCheck">CONFIRM PASSWORD:</label
                   ><input
                     type="password"
@@ -75,7 +76,9 @@
         </div>
         <div class="bottomRight">
           <button>Create Account</button>
-          <div>Already have an account? <a href="">Login</a></div>
+          <div class="loginDiv">
+            Already have an account? <a href="">Login</a>
+          </div>
         </div>
       </div>
     </div>
