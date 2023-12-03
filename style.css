@@ -62,12 +62,14 @@ body {
 }
 input {
   border-radius: 5px;
-  height: 20px;
+  font-size: 20px;
+}
+label {
+  font-size: 12px;
 }
 input,
 label {
   display: block;
-  font: 20px;
 }
 .bottomRight {
   padding-left: 50px;
