@@ -3,22 +3,37 @@
   padding: 0;
 }
 body {
-  background-color: black;
+  background-color: rgb(60, 60, 60);
   display: flex;
   justify-content: center;
 }
 .pageContainer {
   background-color: rgb(224, 224, 224);
-  margin-left: 300px;
-  margin-right: 300px;
+  height: 100vh;
+  margin-left: 350px;
+  margin-right: 350px;
   display: flex;
   flex-direction: row;
 }
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 50px;
+}
+.formContainer {
+  display: flex;
+}
 #backImage {
+  position: absolute;
   max-height: 100vh;
   padding: 0;
   margin: 0;
 }
 #frontLogo {
+  position: relative;
+  width: 428px;
   height: 200px;
+  opacity: 60%;
+  top: 20px;
 }
