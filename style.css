@@ -20,7 +20,7 @@ body {
   padding: 31px;
   padding-left: 20px;
   left: 490px;
-  bottom: 80px;
+  bottom: 170px;
   color: white;
   background-color: rgba(34, 34, 34, 0.65);
   font-size: 65px;
@@ -29,9 +29,9 @@ body {
 .rightSection {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .topRight {
+  padding-top: 80px;
   padding-left: 50px;
   padding-bottom: 75px;
   padding-right: 200px;
@@ -57,7 +57,7 @@ body {
 input,
 label {
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font: 20px;
 }
 .bottomRight {
@@ -76,6 +76,6 @@ label {
   width: 140px;
   height: 140px;
   opacity: 65%;
-  bottom: 80px;
+  bottom: 170px;
   left: 350px;
 }
