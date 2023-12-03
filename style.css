@@ -1,9 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.pageContainer {
+  background-color: rgb(224, 224, 224);
+  margin-left: 300px;
+  margin-right: 300px;
   display: flex;
   flex-direction: row;
 }
 #backImage {
   max-height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 #frontLogo {
   height: 200px;
