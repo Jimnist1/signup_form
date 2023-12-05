@@ -77,6 +77,12 @@ input {
   border-radius: 5px;
   font-size: 20px;
 }
+input:valid {
+  border-color: green;
+}
+input:invalid {
+  border-color: red;
+}
 label {
   font-size: 12px;
 }

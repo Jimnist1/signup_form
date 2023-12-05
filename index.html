@@ -35,12 +35,22 @@
         </div>
         <div class="middleRight">
           <div class="formPretext">Get into it!</div>
-          <form action="example.com/path" method="post">
+          <form
+            id="newUser"
+            action="#"
+            method="post"
+            onsubmit="validate(event)"
+          >
             <div class="formContainer">
               <div class="formLeft">
                 <div class="inputDiv">
                   <label for="first_name">FIRST NAME:</label
-                  ><input type="text" name="first_name" id="first_name" />
+                  ><input
+                    type="text"
+                    name="first_name"
+                    id="first_name"
+                    maxlength="20"
+                  />
                 </div>
                 <div class="inputDiv">
                   <label for="email_address">EMAIL:</label
@@ -48,21 +58,42 @@
                     type="email"
                     name="email_address"
                     id="email_address"
+                    placeholder="you@email.com"
+                    required
                   />
                 </div>
                 <div class="inputDiv">
                   <label for="password">PASSWORD:</label
-                  ><input type="password" name="password" id="password" />
+                  ><input
+                    type="password"
+                    name="password"
+                    id="password"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                    title="Please enter a valid password that is at least 8 characters and contains at least one uppercase letter, one lowercase letter and one number"
+                    required
+                  />
                 </div>
               </div>
               <div class="formRight">
                 <div class="inputDiv">
                   <label for="last_name">LAST NAME:</label
-                  ><input type="text" name="last_name" id="last_name" />
+                  ><input
+                    type="text"
+                    name="last_name"
+                    id="last_name"
+                    maxlength="20"
+                  />
                 </div>
                 <div class="inputDiv">
                   <label for="phone_number">PHONE NUMBER:</label
-                  ><input type="tel" name="phone_number" id="phone_number" />
+                  ><input
+                    type="tel"
+                    name="phone_number"
+                    id="phone_number"
+                    placeholder="0275357770"
+                    minlength="8"
+                    maxlength="10"
+                  />
                 </div>
                 <div class="inputDiv">
                   <label for="passwordCheck">CONFIRM PASSWORD:</label
@@ -70,6 +101,7 @@
                     type="password"
                     name="passwordCheck"
                     id="passwordCheck"
+                    required
                   />
                 </div>
               </div>
@@ -77,12 +109,24 @@
           </form>
         </div>
         <div class="bottomRight">
-          <button>Create Account</button>
+          <button id="newUserSubmit" type="submit" form="newUser">
+            Create Account
+          </button>
           <div class="loginDiv">
             Already have an account? <a href="">Login</a>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      let userPassword = document.getElementById("password");
+      let userPasswordConfirm = document.getElementById("passwordCheck");
+      function validate(event) {
+        if (userPassword !== userPasswordConfirm) event.preventDefault();
+        alert(
+          "The password does not match! Please make sure you write the same passsword twice"
+        );
+      }
+    </script>
   </body>
 </html>
